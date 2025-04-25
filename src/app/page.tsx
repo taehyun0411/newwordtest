@@ -386,7 +386,7 @@ function shuffle<T>(array: T[]): T[] {
 
 // 객관식 보기 생성 함수
 function generateOptions(currentAnswer: string, allAnswers: string[], count = 4) {
-  let options = [currentAnswer];
+  const options = [currentAnswer];
   const pool = allAnswers.filter((answer) => answer !== currentAnswer);
   while (options.length < count && pool.length > 0) {
     const randIdx = Math.floor(Math.random() * pool.length);
