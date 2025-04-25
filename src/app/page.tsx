@@ -592,14 +592,15 @@ if (testQuestions.length === 0) {
           {questionMode === "mc" && shuffledOptions.length > 0 && (
             <div className="grid grid-cols-2 gap-4">
               {shuffledOptions.map((option, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleAnswer(option)}
-                  className="py-3 px-4 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold rounded-xl transition-all duration-300 shadow-md"
-                >
-                  {option}
-                </button>
-              ))}
+  <button
+    key={index}
+    onClick={() => handleAnswer(option)}
+    className="py-3 px-4 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-semibold rounded-xl transition-all duration-300 shadow-md whitespace-normal break-words"
+  >
+    {option}
+  </button>
+))}
+
             </div>
           )}
           {/* 주관식 문제 */}
