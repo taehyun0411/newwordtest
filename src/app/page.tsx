@@ -434,7 +434,7 @@ export default function QuizPage() {
     if (examFinished || testQuestions.length === 0) return;
     const current = testQuestions[currentIndex];
     setQuestionMode(current.type!);
-    setTimeLeft(current.type === "mc" ? 5 : 15);
+    setTimeLeft(current.type === "mc" ? 7 : 15);
     if (current.type === "mc") {
       setShuffledOptions(generateOptions(current.answer, allAnswers));
     }
@@ -490,8 +490,9 @@ if (testQuestions.length === 0) {
       <div className="bg-white rounded-xl shadow-2xl p-8 max-w-md w-full text-center">
         <h1 className="text-3xl font-bold text-gray-800 mb-4">테스트 시작</h1>
         <p className="text-gray-600 mb-6">
-          60개의 문제 중 랜덤으로 25개의 객관식과 5개의 주관식 문제가 출제됩니다.
+          60개의 문제 중 랜덤으로 25개의 객관식과 5개의 주관식 문제가 출제됩니다. 태블릿, 노트북 사용을 권장하나 핸드폰으로도 이용가능합니다.
         </p>
+        
         <button
           onClick={startTest}
           className="py-3 px-6 bg-gradient-to-r from-green-400 to-teal-500 hover:from-green-500 hover:to-teal-600 text-white font-bold rounded-full transition-all duration-300 shadow-lg"
