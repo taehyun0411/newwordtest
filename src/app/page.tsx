@@ -488,7 +488,7 @@ if (testQuestions.length === 0) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-teal-500 to-blue-500 flex flex-col items-center justify-center p-8">
       <div className="bg-white rounded-xl shadow-2xl p-8 max-w-md w-full text-center">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">테스트 시작</h1>
+        <h1 className="text-3xl font-bold text-gray-800 mb-4">운정고3 영어 단어 수행 테스트</h1>
         <p className="text-gray-600 mb-6">
           60개의 문제 중 랜덤으로 25개의 객관식과 5개의 주관식 문제가 출제됩니다. 태블릿, 노트북 사용을 권장하나 핸드폰으로도 이용가능합니다.
         </p>
